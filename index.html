@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nessma Garden | Luxury Floral Boutique</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- WHATSAPP -->
+
+<a 
+href="https://wa.me/212776437241?text=Hello%20Nessma%20Garden,%20I%20want%20to%20order%20flowers"
+class="whatsapp"
+target="_blank">
+
+💬
+
+</a>
+
+
+
+<!-- CART -->
+
+<div class="cart-box" id="cart">
+
+<h2>Your Basket</h2>
+
+<div id="cart-items">
+<p>Your basket is empty</p>
+</div>
+
+<div class="total-row">
+
+<h3>
+Total : <span id="total">0</span> MAD
+</h3>
+
+<button class="cancel-btn" onclick="cancelOrder()" title="Annuler la commande">
+🗑️
+</button>
+
+</div>
+
+<button class="confirm-btn" onclick="confirmOrder()">
+Confirm Order
+</button>
+
+</div>
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header class="header">
+
+
+<div class="logo">
+
+Nessma Garden
+
+</div>
+
+
+
+<nav class="navbar">
+
+
+<a href="#home">Home</a>
+
+<a href="#products">Shop</a>
+
+<a href="#categories">Collections</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+
+</nav>
+
+
+
+
+<div class="header-icons">
+
+
+<span>
+♡
+</span>
+
+
+<span onclick="openCart()">
+
+🛒
+
+<span id="cart-count">
+0
+</span>
+
+</span>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<!-- HERO -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-content">
+
+
+<h5>
+Luxury Floral Boutique
+</h5>
+
+
+
+<h1>
+
+Luxury Flowers
+<br>
+Crafted With Love
+
+</h1>
+
+
+
+<p>
+
+Elegant bouquets created with premium flowers,
+luxury packaging and unforgettable moments.
+
+</p>
+
+
+
+<a href="#products" class="btn">
+
+Shop Now
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- WHY -->
+
+
+<section class="why">
+
+
+<h2>
+Why Choose Nessma Garden
+</h2>
+
+
+
+<div class="why-container">
+
+
+<div class="why-box">
+
+<h3>
+🌹 Premium Flowers
+</h3>
+
+<p>
+Fresh flowers selected every day.
+</p>
+
+</div>
+
+
+
+<div class="why-box">
+
+<h3>
+🚚 Fast Delivery
+</h3>
+
+<p>
+Flowers delivered with care.
+</p>
+
+</div>
+
+
+
+<div class="why-box">
+
+<h3>
+🎁 Luxury Packaging
+</h3>
+
+<p>
+Elegant wrapping for special moments.
+</p>
+
+</div>
+
+
+
+<div class="why-box">
+
+<h3>
+💳 Secure Payment
+</h3>
+
+<p>
+Easy and safe payment.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<section class="featured" id="products">
+
+
+<h2>
+Featured Collection
+</h2>
+
+
+<p>
+Discover our most elegant floral creations
+</p>
+
+
+
+<div class="products">
+
+
+
+<div class="card">
+
+
+<img src="images/rose1.jpg">
+
+
+<div class="card-content">
+
+
+<h3>
+Red Passion
+</h3>
+
+
+<p class="price">
+149 MAD
+</p>
+
+
+<button onclick="addToCart('Red Passion',149)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/rose2.jpg">
+
+
+<div class="card-content">
+
+
+<h3>
+White Elegance
+</h3>
+
+
+<p class="price">
+199 MAD
+</p>
+
+
+<button onclick="addToCart('White Elegance',199)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/rose3.jpg">
+
+
+<div class="card-content">
+
+
+<h3>
+Soft Gift
+</h3>
+
+
+<p class="price">
+89 MAD
+</p>
+
+
+<button onclick="addToCart('Soft Gift',89)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- COLLECTIONS -->
+
+
+<section class="categories" id="categories">
+
+
+<h2>
+Our Collections
+</h2>
+
+
+<p>
+Luxury flowers for every special moment
+</p>
+
+
+
+<div class="category-container">
+
+
+
+<div class="category">
+
+<h3>
+Luxury Roses
+</h3>
+
+</div>
+
+
+
+<div class="category">
+
+<h3>
+Signature Bouquets
+</h3>
+
+</div>
+
+
+
+<div class="category">
+
+<h3>
+Wedding Flowers
+</h3>
+
+</div>
+
+
+
+<div class="category">
+
+<h3>
+Luxury Gifts
+</h3>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section class="about" id="about">
+
+
+<h2>
+About Nessma Garden
+</h2>
+
+
+
+<p>
+
+At Nessma Garden, every flower tells a story.
+We create luxury floral arrangements with premium flowers
+to make every occasion unforgettable.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section class="contact" id="contact">
+
+
+<h2>
+Contact Us
+</h2>
+
+
+<p>
+📍 Agadir, Morocco
+</p>
+
+
+<p>
+📞 +212 7 76 43 72 41
+</p>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Nessma Garden
+</h3>
+
+
+<p>
+Luxury Floral Boutique
+</p>
+
+
+<p>
+© 2026 Nessma Garden - All Rights Reserved
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
